@@ -1,5 +1,13 @@
+import Header from "./components/Header";
+
 const App = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="w-full bg-zinc-50 flex justify-center p-0 md:p-8">
+      <div className="w-full bg-white">
+        <Header />
+      </div>
+    </div>
+  );
 };
 
 export default App;
