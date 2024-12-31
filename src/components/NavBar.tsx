@@ -1,7 +1,15 @@
 const NavBar = () => {
   return (
-    <nav className="pointer-events-auto w-fit">
-      <ul className="px-3 text-sm font-medium rounded-full ring-1 ring-zinc-900/5 shadow-lg flex justify-center space-x-4 bg-white">
+    <nav className="pointer-events-auto w-fit ">
+      <ul
+        className="px-3 
+        text-sm text-zinc-800 dark:text-zinc-200 
+        font-medium rounded-full
+        bg-white/90 dark:bg-zinc-800/90 
+        ring-1 ring-zinc-900/5 backdrop-blur dark:ring-white/10
+        shadow-lg
+        flex justify-center space-x-4"
+      >
         <li>
           <a
             href="#about"
