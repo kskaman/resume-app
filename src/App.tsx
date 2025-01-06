@@ -3,7 +3,7 @@ import Home from "./components/Home";
 const App = () => {
   return (
     <div
-      className="w-full 
+      className="w-full min-h-screen 
       bg-zinc-50 dark:bg-black
       flex justify-center
       xl:px-20 lg:px-14 md:px-10 sm:px-6 px-0"
