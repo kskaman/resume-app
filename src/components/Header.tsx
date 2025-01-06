@@ -6,7 +6,7 @@ const Header = () => {
     <header
       className="sticky top-0 
       flex items-center justify-center
-      py-6"
+      py-6 mb-16 sm:mb-24 md:mb-28 z-10"
     >
       <NavBar />
       <Theme />

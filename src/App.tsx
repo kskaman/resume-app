@@ -1,4 +1,7 @@
-import Home from "./components/Home";
+{
+  /*import HomePage from "./Pages/HomePage";*/
+}
+import EducationPage from "./Pages/EducationPage";
 
 const App = () => {
   return (
@@ -12,9 +15,10 @@ const App = () => {
         className="w-full 
         bg-white dark:bg-zinc-900
         ring-1 ring-zinc-100 dark:ring-zinc-300/20
-        xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0"
+        xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0 py-12"
       >
-        <Home />
+        {/*<HomePage />*/}
+        <EducationPage />
       </div>
     </div>
   );

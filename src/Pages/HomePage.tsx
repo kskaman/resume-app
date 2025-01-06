@@ -1,7 +1,7 @@
-import Header from "./Header";
-import SocialLinks from "./SocialLinks";
+import Header from "../components/Header";
+import SocialLinks from "../components/SocialLinks";
 
-const Home = () => {
+const HomePage = () => {
   const introduction = `
   Hi! I am an aspiring <strong>software developer</strong> passionate about exploring
   the dynamic field of full-stack development. I am currently focused on building
@@ -17,9 +17,9 @@ const Home = () => {
     <>
       <Header />
       <main
-        className="w-full my-4 lg:my-6 
+        className="w-full mb-4 lg:mb-6 
         grid grid-cols-1 lg:grid-cols-3 gap-12
-        py-8 lg:py-16 px-6 sm:px-10 lg:px-14
+        pb-8 lg:pb-16 px-6 sm:px-10 lg:px-14
         text-zinc-600 dark:text-zinc-100"
       >
         <section className="max-w-2xl lg:col-span-2">
@@ -52,4 +52,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

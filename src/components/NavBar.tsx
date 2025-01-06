@@ -36,10 +36,10 @@ const NavBar = () => {
         </li>
         <li>
           <a
-            href="#stack"
+            href="#uses"
             className="block px-4 py-2 transition hover:text-teal-500 cursor-pointer"
           >
-            Stack
+            Uses
           </a>
         </li>
       </ul>
