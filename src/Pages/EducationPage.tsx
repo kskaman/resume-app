@@ -11,6 +11,11 @@ const EducationPage = () => {
           px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
           space-y-16"
       >
+        <section id="educationPageHeader" className="max-w-2xl lg:col-span-2">
+          <h1 className="text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+            An Overview of My Academic Journey
+          </h1>
+        </section>
         <section
           id="formalEducation"
           className="md:border-l 

@@ -19,7 +19,7 @@ const App = () => {
         className="w-full 
         bg-white dark:bg-zinc-900
         ring-1 ring-zinc-100 dark:ring-zinc-300/20
-        xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0 pb-12 pt-6"
+         pb-12 pt-6"
       >
         <Router>
           <Header />

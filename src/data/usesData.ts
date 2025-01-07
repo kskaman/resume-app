@@ -3,6 +3,7 @@ import { InfoItem } from "../types/infoItem";
 
 export const frameworks: InfoItem[] = [
   {
+    key: 1,
     title: "Tailwind CSS",
     officialLink: "https://tailwindcss.com/",
     description:
@@ -126,7 +127,7 @@ export const tools: InfoItem[] = [
         "A lightweight yet powerful code editor by Microsoft with extensive language support and an active extension ecosystem."
     },
     {
-      key: 5,
+      key: 6,
       title: "ChatGPT",
       officialLink: "https://chat.openai.com/",
       description:
