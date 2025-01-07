@@ -1,10 +1,12 @@
 import InfoCard from "../components/InfoCard";
 
 import { formalDegrees, academicResearch } from "../data/educationData";
+import SetTitle from "../components/SetTitle";
 
 const EducationPage = () => {
   return (
     <>
+      <SetTitle title="Education | Kaman" />
       <main
         className="w-full my-4 lg:my-6 
           text-zinc-600 dark:text-zinc-100

@@ -1,9 +1,12 @@
 import InfoCard from "../components/InfoCard";
 import { frameworks, languages, libraries, tools } from "../data/usesData";
 
+import SetTitle from "../components/SetTitle";
+
 const UsesPage = () => {
   return (
     <>
+      <SetTitle title="Uses | Kaman" />
       <main
         className="w-full my-4 lg:my-6 
           text-zinc-600 dark:text-zinc-100

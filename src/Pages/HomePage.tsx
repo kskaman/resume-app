@@ -1,4 +1,5 @@
 import SocialLinks from "../components/SocialLinks";
+import SetTitle from "../components/SetTitle";
 
 const HomePage = () => {
   const introduction = `
@@ -14,6 +15,7 @@ const HomePage = () => {
 
   return (
     <>
+      <SetTitle title="Home | Kaman" />
       <main
         className="w-full mb-4 lg:mb-6 
         grid grid-cols-1 lg:grid-cols-3 gap-12

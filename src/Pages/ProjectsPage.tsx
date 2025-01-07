@@ -1,5 +1,12 @@
+import SetTitle from "../components/SetTitle";
+
 const ProjectsPage = () => {
-  return <div>In Progress</div>;
+  return (
+    <>
+      <SetTitle title="Projects | Kaman" />
+      <div>In Progress</div>
+    </>
+  );
 };
 
 export default ProjectsPage;
