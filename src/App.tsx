@@ -1,9 +1,11 @@
-{
-  /*import HomePage from "./Pages/HomePage";
-import EducationPage from "./Pages/EducationPage";*/
-}
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./Pages/HomePage";
+import EducationPage from "./Pages/EducationPage";
+import ProjectsPage from "./Pages/ProjectsPage";
 import UsesPage from "./Pages/UsesPage";
+
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -19,11 +21,15 @@ const App = () => {
         ring-1 ring-zinc-100 dark:ring-zinc-300/20
         xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0 pb-12 pt-6"
       >
-        {/*<HomePage />*/}
-        {/*<EducationPage />*/}
-        <Header />
-        <UsesPage />
-        {/*<ProjectsPage />*/}
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/education" element={<EducationPage />} />
+            <Route path="/uses" element={<UsesPage />} />
+          </Routes>
+        </Router>
       </div>
     </div>
   );
