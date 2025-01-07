@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import SocialLinks from "../components/SocialLinks";
 
 const HomePage = () => {
@@ -15,7 +14,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Header />
       <main
         className="w-full mb-4 lg:mb-6 
         grid grid-cols-1 lg:grid-cols-3 gap-12

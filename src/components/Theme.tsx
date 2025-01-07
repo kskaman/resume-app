@@ -4,6 +4,13 @@ import { ThemeContext } from "../context/ThemeContext";
 
 const Theme = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    toggleTheme();
+    event.currentTarget.blur();
+  };
+
   return (
     <button
       className="px-3 py-2 
@@ -15,7 +22,7 @@ const Theme = () => {
         text-sm text-zinc-800 dark:text-teal-500
         absolute right-4 mr-8"
       aria-label="Toggle Theme"
-      onClick={toggleTheme}
+      onClick={handleClick}
     >
       {!isDarkMode ? (
         <span className="material-symbols-outlined">light_mode</span>

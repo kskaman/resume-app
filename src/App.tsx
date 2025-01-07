@@ -1,7 +1,9 @@
 {
-  /*import HomePage from "./Pages/HomePage";*/
+  /*import HomePage from "./Pages/HomePage";
+import EducationPage from "./Pages/EducationPage";*/
 }
-import EducationPage from "./Pages/EducationPage";
+import Header from "./components/Header";
+import UsesPage from "./Pages/UsesPage";
 
 const App = () => {
   return (
@@ -15,10 +17,13 @@ const App = () => {
         className="w-full 
         bg-white dark:bg-zinc-900
         ring-1 ring-zinc-100 dark:ring-zinc-300/20
-        xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0 py-12"
+        xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0 pb-12 pt-6"
       >
         {/*<HomePage />*/}
-        <EducationPage />
+        {/*<EducationPage />*/}
+        <Header />
+        <UsesPage />
+        {/*<ProjectsPage />*/}
       </div>
     </div>
   );
