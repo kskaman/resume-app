@@ -90,7 +90,7 @@ export const languages: InfoItem[] = [
   ];
   
 
-export const tools: InfoItem[] = [
+  export const tools: InfoItem[] = [
     {
       key: 1,
       title: "Node.js",
@@ -132,6 +132,14 @@ export const tools: InfoItem[] = [
       officialLink: "https://chat.openai.com/",
       description:
         "An AI language model by OpenAI used for assistance, content generation, and interactive conversations."
+    },
+    {
+      key: 7,
+      title: "Vite",
+      officialLink: "https://vitejs.dev/",
+      description:
+        "A modern frontend build tool that offers a blazing fast dev server and lightning-quick bundling."
     }
   ];
+  
   

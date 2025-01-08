@@ -11,9 +11,9 @@ const InfoCard = ({
 }: InfoItem) => {
   return (
     <div
-      className="rounded-lg 
+      className="rounded-xl 
         hover:bg-emerald-50/60 dark:hover:bg-emerald-950/60
-        cursor-pointer p-4 group
+        p-4 group
         "
     >
       <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
@@ -33,7 +33,7 @@ const InfoCard = ({
       {officialLink && (
         <div
           className="flex gap-2 items-center -translate-x-6
-        transition group-hover:translate-x-0"
+        cursor-pointer transition group-hover:translate-x-0"
         >
           <IoLink
             size={16}
