@@ -1,18 +1,9 @@
 import SocialLinks from "../components/SocialLinks";
 import SetTitle from "../components/SetTitle";
 
-const HomePage = () => {
-  const introduction = `
-  Hi! I am an aspiring <strong>software developer</strong> passionate about exploring
-  the dynamic field of full-stack development. I am currently focused on building
-  responsive and user-friendly applications using technologies such as <strong>React,
-  TypeScript, Node.js, MongoDB, CSS,</strong> and <strong>Tailwind</strong>. While I am
-  currently more focused on frontend development, I am equally interested in backend
-  development. With a keen interest in solving real-world problems through innovative
-  digital solutions, I am committed to honing my skills and contributing meaningfully
-  to the tech industry.
-`;
+import { introHeading, introduction } from "../data/introData";
 
+const HomePage = () => {
   return (
     <>
       <SetTitle title="Home | Kaman" />
@@ -23,10 +14,11 @@ const HomePage = () => {
         text-zinc-600 dark:text-zinc-100"
       >
         <section className="max-w-2xl lg:col-span-2">
-          <h1 className="text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-            I am Kaman, <br />
-            Crafting My Journey in Software Development
-          </h1>
+          <h1
+            className="text-5xl font-bold tracking-tight
+              text-zinc-800 dark:text-zinc-100"
+            dangerouslySetInnerHTML={{ __html: introHeading }}
+          />
           <p
             className="mt-12"
             dangerouslySetInnerHTML={{ __html: introduction }}

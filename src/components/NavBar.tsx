@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <>
       <div className="flex md:hidden ml-auto pointer-events-auto">
-        <nav ref={menuRef} className=" w-fit  relative">
+        <nav ref={menuRef} className="w-fit  relative">
           <div
             className="bg-white/90 dark:bg-zinc-800
           text-zinc-800 dark:text-zinc-200 rounded-full
