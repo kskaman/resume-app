@@ -1,32 +1,13 @@
+import { sudokuProject } from "../data/projects/sudoku";
+import { simpleCalculatorProject } from "../data/projects/simple-calculator";
+import { workoutLoggerProject } from "../data/projects/workout-logger";
+import { tipCalculatorProject } from "../data/projects/tip-calculator";
+import { financeProject } from "../data/projects/personal-finance";
+
 export const projects = [
-    {
-        id: "personal-finance-app",
-        icon: "",
-        name: "Personal Finance App",
-        completed: false,
-    },
-    {
-        id: "sudoku-web-game",
-        icon: "",
-        name: "Sudoku Web Game",
-        completed: true,
-    },
-    {
-        id: "workout-logger",
-        icon: "",
-        name: "Workout Logger",
-        completed: true,
-    },
-    {
-        id: "simple-arithmetic-calculator",
-        icon: "",
-        name: "Simple Arithmetic Calculator",
-        completed: true,
-    },
-    {
-        id: "tip-calculator",
-        icon: "",
-        name: "Tip Calculator",
-        completed: true,
-    },
-]
+    financeProject,
+    sudokuProject,
+    workoutLoggerProject,
+    simpleCalculatorProject,
+    tipCalculatorProject,
+];

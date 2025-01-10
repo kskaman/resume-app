@@ -31,8 +31,12 @@ const ProjectsPage = () => {
             className="grid grid-cols-1 gap-x-16 gap-y-20 sm:grid-cols-2 lg:grid-cols-3"
           >
             {projects.map((project) => (
-              <li>
-                <ProjectCard logo={project.icon} name={project.name} />
+              <li key={project.id}>
+                <ProjectCard
+                  id={project.id}
+                  logo={project.icon}
+                  name={project.name}
+                />
               </li>
             ))}
           </ul>

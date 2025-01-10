@@ -6,6 +6,7 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import UsesPage from "./Pages/UsesPage";
 
 import Header from "./components/Header";
+import ProjectDescriptionPage from "./Pages/ProjectDescriptionPage";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       xl:px-20 lg:px-14 md:px-10 sm:px-6 px-0"
     >
       <div
-        className="w-full 
+        className="container w-full 
         bg-white dark:bg-zinc-900
         ring-1 ring-zinc-100 dark:ring-zinc-300/20
         pb-6
@@ -27,6 +28,10 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route
+              path="/projects/:projectId"
+              element={<ProjectDescriptionPage />}
+            />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/uses" element={<UsesPage />} />
           </Routes>
