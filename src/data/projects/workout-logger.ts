@@ -9,7 +9,6 @@ export const workoutLoggerProject: Project = {
     completed: true,
     previewImg: workoutLoggerPreviewImg,
     tags: ["Frontend"],
-    team: null,
     description: [
       {
         key: "Overview",
@@ -43,5 +42,11 @@ export const workoutLoggerProject: Project = {
       { key: "JavaScript", value: "Programming Language" },
       { key: "Chart.js", value: "Data Visualization" },
       { key: "GitHub Pages", value: "Deployment" }
-    ]
+    ],
+    team: [
+      {
+        person: "Evan Watton",
+        role: "Mentor - Project Lead"
+      },
+    ],
 }

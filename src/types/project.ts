@@ -5,7 +5,7 @@ export interface Project {
     completed: boolean;
     previewImg: string;
     tags: string[];
-    team: string[] | null;
+  team: { person: string;  role: string}[] | null;
   description: { key: string; value :  string | string[] }[];
     liveUrl: string;
     repoUrl: string;

@@ -120,16 +120,36 @@ const ProjectDescriptionPage = () => {
 
             {/* Stack Section */}
             {project.stack && (
-              <div>
-                <div className="text-2xl font-semibold flex flex-row items-center gap-2.5">
-                  <GoStack size={18} />
-                  <span>Stack</span>
+              <div
+                className="rounded-xl p-6
+                border border-zinc-200/60 dark:border-zinc-700/50"
+              >
+                <div>
+                  <div
+                    className="text-sm font-semibold 
+                  flex flex-row items-center gap-2.5
+                  text-zinc-900 dark:text-zinc-100"
+                  >
+                    <GoStack size={18} />
+                    <span>Stack</span>
+                  </div>
+                  <p className="mt-1.5 text-sm text-zinc-600 dark:text-zinc-400">
+                    The technologies used for this project :
+                  </p>
                 </div>
-                <ul className="list-disc list-inside mt-2">
+                <ul className="space-y-1.5 mt-6">
                   {project.stack &&
                     project.stack.map((item) => (
                       <li key={item.key}>
-                        <strong>{item.key}:</strong> {item.value}
+                        <span
+                          className="mr-1.5 text-sm font-medium 
+                          text-zinc-700 dark:text-zinc-300"
+                        >
+                          {item.key}
+                        </span>
+                        <span className="text-sm text-zinc-400 dark-text-zinc-500">
+                          {`/ ${item.value}`}
+                        </span>
                       </li>
                     ))}
                 </ul>
@@ -138,14 +158,39 @@ const ProjectDescriptionPage = () => {
 
             {/* Team Section (if available) */}
             {project.team && (
-              <div>
-                <div className="text-2xl font-semibold flex flex-row items-center gap-2.5">
-                  <FiUserPlus size={18} />
-                  <span>Team</span>
+              <div
+                className="rounded-xl p-6
+                border border-zinc-200/60 dark:border-zinc-700/50"
+              >
+                <div>
+                  <div
+                    className="text-sm font-semibold 
+                  flex flex-row items-center gap-2.5
+                  text-zinc-900 dark:text-zinc-100"
+                  >
+                    <FiUserPlus size={18} />
+                    <span>Team</span>
+                  </div>
+                  <p
+                    className="mt-1.5 text-sm 
+                  text-zinc-600 dark:text-zinc-400"
+                  >
+                    The Fantastic people I worked with
+                  </p>
                 </div>
-                <ul className="list-disc list-inside mt-2">
-                  {project.team.map((member, index) => (
-                    <li key={index}>{member}</li>
+                <ul className="space-y-1.5 mt-6">
+                  {project.team.map((item) => (
+                    <li key={item.person}>
+                      <span
+                        className="mr-1.5 text-sm font-medium 
+                    text-zinc-700 dark:text-zinc-300"
+                      >
+                        {item.person}
+                      </span>
+                      <span className="text-sm text-zinc-400 dark-text-zinc-500">
+                        {`/ ${item.role}`}
+                      </span>
+                    </li>
                   ))}
                 </ul>
               </div>
