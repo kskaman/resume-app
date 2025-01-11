@@ -23,14 +23,32 @@ const ProjectDescriptionPage = () => {
     <>
       <SetTitle title={`${project.name} | Kaman`} />
       <main
-        className="w-full my-4 lg:my-6 
+        className="w-full my-4 lg:my-6 relative
           text-zinc-600 dark:text-zinc-100
           px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
           space-y-16"
       >
+        {!project.completed && (
+          <div className="absolute left-18 -top-12 flex flex-row gap-2.5 items-center">
+            <span className="relative flex h-3 w-3">
+              <span
+                className="absolute h-full w-full animate-ping rounded-full opacity-75 bg-teal-400"
+                style={{ animationDuration: "1400ms" }}
+              ></span>
+              <span className="relative h-3 w-3 rounded-full bg-teal-500"></span>
+            </span>
+            <p className="text-base">In progress</p>
+          </div>
+        )}
         {/* Project Name */}
         <section>
-          <h1 className="text-5xl font-bold">{project.name}</h1>
+          <h1
+            className="text-4xl font-bold tracking-tight
+            text-zinc-800 dark:text-znc-100 sm:text-5xl
+            mb-1.5 sm:mb-6"
+          >
+            {project.name}
+          </h1>
         </section>
 
         {/* Tags Section */}
@@ -50,29 +68,35 @@ const ProjectDescriptionPage = () => {
           {/* First Column */}
           <div className="lg:col-span-2 space-y-6">
             {/* Preview Image */}
-            <div>
-              <img
-                src={project.previewImg}
-                alt={`${project.name} preview`}
-                className="rounded"
-              />
+            <div className="mb-12">
+              <img src={project.previewImg} alt={`${project.name} preview`} />
             </div>
 
             {/* Description Section */}
-            <div>
+            <div className="mt-6 lg:mt-12">
               {project.description.map((item) => (
-                <div key={item.key} className="mb-6">
-                  <h2 className="text-2xl font-semibold capitalize">
+                <div key={item.key} className="mb-12 space-y-6">
+                  {/* Styled Heading */}
+                  <h2
+                    className="text-3xl 
+                      font-semibold capitalize
+                      text-zinc-900 dark:text-zinc-100"
+                  >
                     {item.key}
                   </h2>
+
+                  {/* Styled Content */}
                   {Array.isArray(item.value) ? (
-                    <ul className="list-disc list-inside mt-2">
+                    <ul className="list-none mt-2 prose dark:prose-invert">
                       {item.value.map((v, index) => (
-                        <li key={index}>{v}</li>
+                        <li key={index} className="my-2">
+                          <span className="ml-1 mr-3">-</span>
+                          {v}
+                        </li>
                       ))}
                     </ul>
                   ) : (
-                    <p className="mt-2">{item.value}</p>
+                    <p className="mt-2 prose dark:prose-invert">{item.value}</p>
                   )}
                 </div>
               ))}
@@ -83,39 +107,43 @@ const ProjectDescriptionPage = () => {
           <div className="space-y-6">
             {/* Links */}
             <div className="flex gap-6 flex-col lg:flex-col sm:flex-row">
-              <div className="w-full">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex gap-2.5 items-center justify-center
+              {project.liveUrl && (
+                <div className="w-full">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex gap-2.5 items-center justify-center
                            bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
                            dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700
                            text-base text-zinc-100 active:text-zinc-100/70
                            outline-offset-2 rounded-lg px-4 py-2.5
                            hover:underline"
-                >
-                  <FaExternalLinkAlt size={16} />
-                  <span>Live Demo</span>
-                </a>
-              </div>
-              <div className="w-full">
-                <a
-                  href={project.repoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex gap-2.5 items-center justify-center
+                  >
+                    <FaExternalLinkAlt size={16} />
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              )}
+              {project.repoUrl && (
+                <div className="w-full">
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex gap-2.5 items-center justify-center
                bg-zinc-100 hover:bg-zinc-200 active:bg-zinc-100
                dark:bg-zinc-800/50 dark:hover:bg-zinc-800 dark:active:bg-zinc-800/50
                text-base text-zinc-900 active:text-zinc-900/60 
                dark:text-zinc-300 dark:hover:text-zinc-50 dark:active:text-zinc-50/70
                outline-offset-2 rounded-lg px-4 py-2.5
                hover:underline"
-                >
-                  <MdOutlineLink size={24} />
-                  <span>GitHub Repository</span>
-                </a>
-              </div>
+                  >
+                    <MdOutlineLink size={24} />
+                    <span>GitHub Repository</span>
+                  </a>
+                </div>
+              )}
             </div>
 
             {/* Stack Section */}

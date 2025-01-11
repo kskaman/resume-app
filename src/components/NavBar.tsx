@@ -114,7 +114,7 @@ const NavBar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/uses"
+                  to="/skills"
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
                     `block px-4 py-2.5 transition cursor-pointer ${
@@ -122,7 +122,7 @@ const NavBar = () => {
                     }`
                   }
                 >
-                  Uses
+                  Skills
                 </NavLink>
               </li>
             </ul>
@@ -198,7 +198,7 @@ const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="/uses"
+                to="/skills"
                 className={({ isActive }) =>
                   `relative block px-4 py-2.5 transition cursor-pointer ${
                     isActive
@@ -212,7 +212,7 @@ const NavBar = () => {
                   }`
                 }
               >
-                Uses
+                Skills
               </NavLink>
             </li>
           </ul>

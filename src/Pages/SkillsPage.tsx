@@ -3,17 +3,17 @@ import { frameworks, languages, libraries, tools } from "../data/usesData";
 
 import SetTitle from "../components/SetTitle";
 
-const UsesPage = () => {
+const SkillsPage = () => {
   return (
     <>
-      <SetTitle title="Uses | Kaman" />
+      <SetTitle title="Skills | Kaman" />
       <main
         className="w-full my-4 lg:my-6 
           text-zinc-600 dark:text-zinc-100
           px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
           space-y-16"
       >
-        <section id="usesPageHeader" className="max-w-2xl lg:col-span-2">
+        <section id="skillsPageHeader" className="max-w-2xl lg:col-span-2">
           <h1 className="text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
             Tools and Technologies I Use
           </h1>
@@ -147,4 +147,4 @@ const UsesPage = () => {
   );
 };
 
-export default UsesPage;
+export default SkillsPage;

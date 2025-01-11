@@ -7,8 +7,8 @@ export interface Project {
     tags: string[];
   team: { person: string;  role: string}[] | null;
   description: { key: string; value :  string | string[] }[];
-    liveUrl: string;
-    repoUrl: string;
+    liveUrl: string | null;
+    repoUrl: string | null;
     stack: { key: string; value: string }[] | null;
   }
   

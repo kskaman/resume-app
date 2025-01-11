@@ -36,6 +36,7 @@ const ProjectsPage = () => {
                   id={project.id}
                   logo={project.icon}
                   name={project.name}
+                  completed={project.completed}
                 />
               </li>
             ))}

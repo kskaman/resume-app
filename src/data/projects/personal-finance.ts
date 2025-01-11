@@ -11,11 +11,43 @@ export const financeProject: Project = {
     tags: ["Full Stack"],
     team: null,
     description: [
-        { key: "Overview", value: "Coming soon...", },
-        { key: "features", value: [], },
-        { key: "What I Learned", value: "" },
+        { 
+            key: `Overview`, 
+            value: `The application is a budget management tool that 
+              allows users to handle budgets, saving pots, recurring 
+              bills, and transactions in a user-friendly interface.
+              It offers a clean and intuitive experience across devices 
+              with responsive design.` 
+        },
+        { 
+            key: `Features`, 
+            value: [
+                `Overview Dashboard: Displays total budgets, saving pots,
+                and the latest three transactions for each category while
+                showing progress toward saving goals.`,
+                `Transactions Page: Lists all transactions with pagination 
+                (10 per page) and includes search, sort, and filter options.`,
+                `Budget & Saving Pots Management: Supports Create, Read, 
+                Update, and Delete (CRUD) operations with real-time savings progress tracking.`,
+                `Recurring Bills: Shows a list of recurring bills with their 
+                current month's status and provides search and sort functionality.`,
+                `Form Validation & Accessibility: Implements form validation, 
+                keyboard navigation, and clear hover and focus states.`,
+                `Responsive Design: Adapts layouts for mobile, tablet, 
+                and desktop, maintaining usability across devices.`
+            ]
+        },
+        { 
+            key: `What I Learned`, 
+            value: `Through this project, I enhanced my understanding of 
+            creating user-friendly interfaces, implementing CRUD operations,
+            ensuring accessibility, and developing responsive designs.
+            I also gained experience in organizing and managing complex
+            application features effectively.`
+        }
     ],
-    liveUrl: "",
-    repoUrl: "",
+    
+    liveUrl: null,
+    repoUrl: null,
     stack: null,
 }
