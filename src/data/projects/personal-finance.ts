@@ -36,14 +36,6 @@ export const financeProject: Project = {
                 `Responsive Design: Adapts layouts for mobile, tablet, 
                 and desktop, maintaining usability across devices.`
             ]
-        },
-        { 
-            key: `What I Learned`, 
-            value: `Through this project, I enhanced my understanding of 
-            creating user-friendly interfaces, implementing CRUD operations,
-            ensuring accessibility, and developing responsive designs.
-            I also gained experience in organizing and managing complex
-            application features effectively.`
         }
     ],
     

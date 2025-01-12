@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { projects } from "../data/projectsData";
 
 import SetTitle from "../components/SetTitle";
 import { Project } from "../types/project";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { MdOutlineLink } from "react-icons/md";
+import { MdArrowBack, MdOutlineLink } from "react-icons/md";
 import { GoStack } from "react-icons/go";
 import { FiUserPlus } from "react-icons/fi";
 
@@ -28,8 +28,21 @@ const ProjectDescriptionPage = () => {
           px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
           space-y-16"
       >
+        <div>
+          <div
+            className="rounded-full mb-6 flex items-center
+              ring-1 ring-zinc-900/5 text-zinc-700 
+              dark:ring-zinc-500 dark:text-zinc-500
+              w-fit p-2 font-hairline dark:bg-zinc-900 bg-white
+              lg:top-1.5 xl:absolute lg:-left-5 xl:z-10"
+          >
+            <Link to="/projects" aria-label="Go back">
+              <MdArrowBack size={24} />
+            </Link>
+          </div>
+        </div>
         {!project.completed && (
-          <div className="absolute left-18 -top-12 flex flex-row gap-2.5 items-center">
+          <div className="absolute left-18 top-1 flex flex-row gap-2.5 items-center">
             <span className="relative flex h-3 w-3">
               <span
                 className="absolute h-full w-full animate-ping rounded-full opacity-75 bg-teal-400"
@@ -44,7 +57,7 @@ const ProjectDescriptionPage = () => {
         <section>
           <h1
             className="text-4xl font-bold tracking-tight
-            text-zinc-800 dark:text-znc-100 sm:text-5xl
+            text-zinc-800 dark:text-zinc-100 sm:text-5xl
             mb-1.5 sm:mb-6"
           >
             {project.name}
@@ -56,7 +69,7 @@ const ProjectDescriptionPage = () => {
           {project.tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded"
+              className="px-2 py-1 bg-gray-200 dark:bg-zinc-800/50 dark:text-zinc-300/60 rounded"
             >
               {tag}
             </span>
