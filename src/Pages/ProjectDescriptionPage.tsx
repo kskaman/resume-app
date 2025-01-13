@@ -42,7 +42,7 @@ const ProjectDescriptionPage = () => {
           </div>
         </div>
         {!project.completed && (
-          <div className="absolute left-18 top-1 flex flex-row gap-2.5 items-center">
+          <div className="absolute left-18 xl:-top-32 top-0 flex flex-row gap-2.5 items-center">
             <span className="relative flex h-3 w-3">
               <span
                 className="absolute h-full w-full animate-ping rounded-full opacity-75 bg-teal-400"
