@@ -7,6 +7,7 @@ import SkillsPage from "./Pages/SkillsPage";
 
 import Header from "./components/Header";
 import ProjectDescriptionPage from "./Pages/ProjectDescriptionPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0"
       >
         <Router>
+          <ScrollToTop />
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
