@@ -11,7 +11,7 @@ const InfoCard = ({
 }: InfoItem) => {
   return (
     <div
-      className="rounded-xl 
+      className="rounded-xl
         hover:bg-emerald-50/60 dark:hover:bg-emerald-950/60
         p-4 group
         "
@@ -41,7 +41,7 @@ const InfoCard = ({
           />
 
           <a
-            className="text-sm text-zinc-500
+            className="text-sm text-zinc-500 group-hover:text-teal-500
           dark:text-zinc-400 hover:underline"
             href={officialLink}
             target="_blank"
