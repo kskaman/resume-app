@@ -29,13 +29,11 @@ const SocialLinks: React.FC = () => {
     <>
       <ul
         className="
-        flex flex-col 
-        sm:flex-row 
-        lg:flex-col 
-        items-center lg:items-start 
-        justify-start 
-        gap-12 lg:gap-8
-      "
+          flex flex-col sm:flex-row lg:flex-col
+          items-center lg:items-start
+           justify-center sm:justify-start
+            gap-12 lg:gap-8
+        "
       >
         <li className="lg:w-full">
           <a
@@ -70,7 +68,7 @@ const SocialLinks: React.FC = () => {
                        bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
                        dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700
                        font-semibold text-base text-zinc-100 active:text-zinc-100/70
-                       outline-offset-2 rounded-lg w-full sm:w-[148px] px-4 py-2.5"
+                       outline-offset-2 rounded-lg w-full w-[200px] px-4 py-2.5"
           >
             {isCopied ? (
               <IoCheckmarkDoneSharp size={24} />
