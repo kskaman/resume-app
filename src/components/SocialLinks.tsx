@@ -28,8 +28,14 @@ const SocialLinks: React.FC = () => {
   return (
     <>
       <ul
-        className="flex flex-row items-center lg:items-start 
-             justify-start lg:flex-col gap-12 lg:gap-8"
+        className="
+        flex flex-col 
+        sm:flex-row 
+        lg:flex-col 
+        items-center lg:items-start 
+        justify-start 
+        gap-12 lg:gap-8
+      "
       >
         <li className="lg:w-full">
           <a

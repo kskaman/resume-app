@@ -7,7 +7,7 @@ export const formalDegrees : InfoItem[] = [
       subTitle: "Memorial University of Newfoundland",
       duration: "2022 - 2024",
       description: `Specialized in Mathematical Physics with a focus on Quantum
-        Entanglement.Completed a thesis- based program that involved
+        Entanglement. Completed a thesis- based program that involved
         in-depth research on the complexities of quantum systems and
         their entanglement properties.`,
     },
