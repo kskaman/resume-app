@@ -33,7 +33,7 @@ export const sudokuProject: Project = {
     },
   ],
   liveUrl: "https://sudoku-react-app-alpha.vercel.app",
-  repoUrl: "https://github.com/kskaman/sudoku-web-game",
+  repoUrl: "https://github.com/kskaman/sudoku-react-app",
   stack: [
     { key: "React", value: "UI Library" },
     { key: "CSS Modules", value: "Styling" },
