@@ -1,4 +1,4 @@
-import sudokuIcon from "../../assets/images/sudoku-icon.png";
+import sudokuIcon from "../../assets/images/sudoku-icon.webp";
 import sudokuPreviewImg from "../../assets/images/sudokuPreviewImg.png";
 import { Project } from "../../types/project";
 

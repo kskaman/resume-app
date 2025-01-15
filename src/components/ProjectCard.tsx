@@ -30,7 +30,7 @@ const ProjectCard = ({ id, logo, name, completed }: ProjectCardProps) => {
         </div>
       )}
       <div className="p-2 h-16 w-16 rounded-full">
-        <img src={logo} alt={`${name}-logo`} />
+        <img src={logo} alt={`${name}-logo`} className="rounded-full" />
       </div>
 
       <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
