@@ -47,7 +47,21 @@ export const libraries: InfoItem[] = [
       officialLink: "https://axios-http.com/docs/intro",
       description:
         "A promise-based HTTP client for browser and Node.js, simplifying API requests and response handling."
-    }
+    },
+    {
+      key: 6,
+      title: "MUI",
+      officialLink: "https://mui.com/",
+      description:
+        "A popular React component library that provides pre-designed and customizable UI components following Material Design principles."
+    },
+    {
+      key: 7,
+      title: "ReactMarkdown",
+      officialLink: "https://github.com/remarkjs/react-markdown",
+      description:
+        "A React component for rendering Markdown content using the CommonMark specification, with support for custom rendering."
+    },
   ];
   
 
@@ -139,7 +153,15 @@ export const languages: InfoItem[] = [
       officialLink: "https://vitejs.dev/",
       description:
         "A modern frontend build tool that offers a blazing fast dev server and lightning-quick bundling."
+    },
+    {
+      key: 8,
+      title: "Vercel",
+      officialLink: "https://vercel.com/",
+      description:
+        "A cloud platform for frontend frameworks and static sites, enabling seamless deployment, serverless functions, and global edge network performance."
     }
+    
   ];
   
   

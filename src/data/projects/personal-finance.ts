@@ -40,6 +40,19 @@ export const financeProject: Project = {
     ],
     
     liveUrl: null,
-    repoUrl: null,
-    stack: null,
+    repoUrl: "https://github.com/kskaman/personal-finance-app",
+    stack: [
+        { key: "React", value: "UI Library" },
+        { key: "TypeScript", value: "Programming Language" },
+        { key: "MUI (Material UI)", value: "Component Library" },
+        { key: "Vite", value: "Build Tool" },
+        { key: "uuid", value: "Unique ID Generator" },
+        { key: "React Router", value: "Client-side Routing" },
+        { key: "React Hook Form", value: "Form Management" },
+        { key: "Yup", value: "Schema Validation" },
+        { key: "Axios", value: "API Requests" },
+        { key: "Express.js", value: "Backend Framework" },
+        { key: "PostgreSQL", value: "Database" },
+        { key: "Vercel", value: "Frontend Deployment" },
+    ],
 }
