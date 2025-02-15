@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
-import ProjectsPage from "./pages/ProjectsPage";
-import ProjectDescriptionPage from "./pages/ProjectDescriptionPage";
 import EducationPage from "./pages/EducationPage";
+import ProjectDescriptionPage from "./pages/ProjectDescriptionPage";
+import ProjectsPage from "./pages/ProjectPage";
 import SkillsPage from "./pages/SkillsPage";
 
 const App = () => {
