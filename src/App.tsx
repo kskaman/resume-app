@@ -24,7 +24,7 @@ const App = () => {
         pb-6
         xl:mx-20 lg:mx-14 md:mx-10 sm:mx-6 mx-0"
       >
-        <Router>
+        <Router basename="/">
           <ScrollToTop />
           <Header />
           <Routes>
