@@ -46,7 +46,8 @@ export const workoutLoggerProject: Project = {
     team: [
       {
         person: "Evan Watton",
-        role: "Mentor - Project Lead"
+        role: "Mentor - Project Lead",
+        link: "https://github.com/evnwttn",
       },
     ],
 }

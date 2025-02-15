@@ -222,12 +222,21 @@ const ProjectDescriptionPage = () => {
                 <ul className="space-y-1.5 mt-6">
                   {project.team.map((item) => (
                     <li key={item.person}>
-                      <span
-                        className="mr-1.5 text-sm font-medium 
-                    text-zinc-700 dark:text-zinc-300"
-                      >
-                        {item.person}
+                      <span className="mr-1.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                        {item.link ? (
+                          <a
+                            href="https://github.com/evnwttn"
+                            className="decoration-none hover:underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.person}
+                          </a>
+                        ) : (
+                          item.person
+                        )}
                       </span>
+
                       <span className="text-sm text-zinc-400 dark-text-zinc-500">
                         {`/ ${item.role}`}
                       </span>

@@ -9,7 +9,7 @@ export const financeProject: Project = {
     completed: false,
     previewImg: financePreviewImg,
     tags: ["Full Stack"],
-    team: null,
+    team: [{person: "Andrew Reynolds", link: "https://github.com/apreynolds1989", role: "Mentor - Project Lead"}],
     description: [
         { 
             key: `Overview`, 
