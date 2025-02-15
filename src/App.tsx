@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import EducationPage from "./pages/EducationPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import SkillsPage from "./pages/SkillsPage";
-
 import Header from "./components/Header";
-import ProjectDescriptionPage from "./pages/ProjectDescriptionPage";
 import ScrollToTop from "./components/ScrollToTop";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDescriptionPage from "./pages/ProjectDescriptionPage";
+import EducationPage from "./pages/EducationPage";
+import SkillsPage from "./pages/SkillsPage";
 
 const App = () => {
   return (
