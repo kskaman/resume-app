@@ -14,7 +14,7 @@ export const markdownEditorProject: Project = {
   description: [
     {
       key: "Overview",
-      value: `An in-browser Markdown editor built with React and TypeScript, enabling users to create, edit, and manage Markdown documents with ease. The editor features a live preview powered by ReactMarkdown for accurate formatted output and supports robust file operations, including uploading existing .md files and downloading documents as both Markdown and high-quality PDFs using pdfMake.`,
+      value: `An in-browser Markdown editor built with React and TypeScript, enabling users to create, edit, and manage Markdown documents with ease. The editor features a live preview powered by ReactMarkdown for accurate formatted output and supports robust file operations, including uploading existing .md files and downloading documents as both Markdown and high-quality PDFs using pdfMake.  Inspired by a FrontendMentors challenge, this project combines a rich text editor with a live preview powered by ReactMarkdown, ensuring accurate rendering of formatted content.`,
     },
     {
       key: "Features",
