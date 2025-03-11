@@ -120,6 +120,24 @@ const ProjectDescriptionPage = () => {
           <div className="space-y-6">
             {/* Links */}
             <div className="flex gap-6 flex-col lg:flex-col sm:flex-row">
+              {project.frontendLiveUrl && (
+                <div className="w-full">
+                  <a
+                    href={project.frontendLiveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex gap-2.5 items-center justify-center
+                           bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+                           dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700
+                           text-base text-zinc-100 active:text-zinc-100/70
+                           outline-offset-2 rounded-lg px-4 py-2.5
+                           hover:underline"
+                  >
+                    <FaExternalLinkAlt size={16} />
+                    <span>Frontend Demo</span>
+                  </a>
+                </div>
+              )}
               {project.liveUrl && (
                 <div className="w-full">
                   <a

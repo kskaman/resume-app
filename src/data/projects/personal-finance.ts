@@ -40,6 +40,7 @@ export const financeProject: Project = {
     ],
     
     liveUrl: null,
+    frontendLiveUrl: "https://personal-finance-app-frontend-dxv8-kskaman-gmailcoms-projects.vercel.app/login",
     repoUrl: "https://github.com/kskaman/personal-finance-app",
     stack: [
         { key: "React", value: "UI Library" },
