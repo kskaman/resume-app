@@ -243,7 +243,7 @@ const ProjectDescriptionPage = () => {
                       <span className="mr-1.5 text-sm font-medium text-zinc-700 dark:text-zinc-300">
                         {item.link ? (
                           <a
-                            href="https://github.com/evnwttn"
+                            href={item.link}
                             className="decoration-none hover:underline"
                             target="_blank"
                             rel="noopener noreferrer"
