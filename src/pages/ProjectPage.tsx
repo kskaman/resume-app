@@ -12,7 +12,7 @@ const ProjectsPage = () => {
         className="w-full my-4 lg:my-6 
           text-zinc-600 dark:text-zinc-100
           px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20
-          space-y-16"
+          space-y-8"
       >
         <section id="usesPageHeader" className="max-w-2xl lg:col-span-2">
           <h1 className="text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
