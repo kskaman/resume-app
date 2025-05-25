@@ -1,5 +1,5 @@
 import financeIcon from "../../assets/images/finance-icon.png";
-import financePreviewImg from "../../assets/images/financePreviewImg.jpg";
+import financePreviewImg from "../../assets/images/financePreviewImg.png";
 import { Project } from "../../types/project";
 
 export const financeProject: Project = {
